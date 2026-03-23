@@ -1075,6 +1075,10 @@
         });
 
         // ==================== TYPEWRITER EFFECT ====================
+        function startDialogue() {
+            typeDialogue();
+        }
+
         function typeDialogue() {
             if (dialogueIndex >= CONFIG.dialogueLines.length) {
                 setTimeout(() => {
@@ -1281,7 +1285,7 @@
             
             memoryScreen.appendChild(matchDiv);
             
-            setTimeout(() => { if (matchDiv.parentNode) matchDiv.remove(); }, 4000);
+            setTimeout(() => { if (matchDiv.parentNode) matchDiv.remove(); }, 2000);
         }
 
         function showMemoryCompletionDialogue() {
